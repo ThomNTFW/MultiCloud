@@ -17,5 +17,3 @@ spec:
   selector:
     io.kompose.service: air-da-client
   type: LoadBalancer
-status:
-  loadBalancer: {}

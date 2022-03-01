@@ -15,5 +15,3 @@ spec:
       targetPort: 5000
   selector:
     io.kompose.service: air-da-server
-status:
-  loadBalancer: {}
