@@ -11,8 +11,8 @@ metadata:
   name: air-da-client-tcp
 spec:
   ports:
-    - name: "9005"
-      port: 9005
+    - name: "80"
+      port: 80
       targetPort: 80
   selector:
     io.kompose.service: air-da-client
