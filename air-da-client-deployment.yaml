@@ -27,7 +27,7 @@ spec:
         io.kompose.service: air-da-client
     spec:
       containers:
-        - image: europe-west1-docker.pkg.dev/acn-gcda/multi-cloud/air-da-client:tag1
+        - image: 756795388794.dkr.ecr.eu-west-1.amazonaws.com/air-da-client:latest
           name: air-da-client
           ports:
             - containerPort: 80
