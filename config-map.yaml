@@ -131,8 +131,8 @@ spec:
     tier: frontend
   ports:
   - protocol: "TCP"
-    port: 9005
-    targetPort: 80
+    port: 443
+    targetPort: 9005
   type: LoadBalancer
 
 ---
