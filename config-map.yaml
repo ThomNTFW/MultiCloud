@@ -94,7 +94,7 @@ spec:
           # Set this to "Always" for the cloud, and "Never" if deploying to Minikube locally.
           imagePullPolicy: "Always"
           ports:
-            - containerPort: 443
+            - containerPort: 9005
           volumeMounts:
             - name: config
               mountPath: /etc/nginx/conf.d
@@ -131,7 +131,7 @@ spec:
     tier: frontend
   ports:
   - protocol: "TCP"
-    port: 443
+    port: 9005
     targetPort: 80
   type: LoadBalancer
 
