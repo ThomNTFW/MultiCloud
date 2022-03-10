@@ -1,33 +1,33 @@
-# apiVersion: apps/v1
-# kind: Deployment
-# metadata:
-#   annotations:
-#     kompose.cmd: kompose convert
-#     kompose.version: 1.26.1 (HEAD)
-#   creationTimestamp: null
-#   labels:
-#     io.kompose.service: air-da-server
-#   name: air-da-server
-# spec:
-#   replicas: 1
-#   selector:
-#     matchLabels:
-#       io.kompose.service: air-da-server
-#   strategy: {}
-#   template:
-#     metadata:
-#       annotations:
-#         kompose.cmd: kompose convert
-#         kompose.version: 1.26.1 (HEAD)
-#       creationTimestamp: null
-#       labels:
-#         io.kompose.network/air-da-network: "true"
-#         io.kompose.service: air-da-server
-#     spec:
-#       containers:
-#         - image: europe-west1-docker.pkg.dev/acn-gcda/multi-cloud/air-da-server:tag1
-#           name: air-da-server
-#           ports:
-#             - containerPort: 5000
-#           resources: {}
-#       restartPolicy: Always
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.26.1 (HEAD)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: air-da-server
+  name: air-da-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: air-da-server
+  strategy: {}
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert
+        kompose.version: 1.26.1 (HEAD)
+      creationTimestamp: null
+      labels:
+        io.kompose.network/air-da-network: "true"
+        io.kompose.service: air-da-server
+    spec:
+      containers:
+        - image: europe-west1-docker.pkg.dev/acn-gcda/multi-cloud/air-da-server:tag1
+          name: air-da-server
+          ports:
+            - containerPort: 5000
+          resources: {}
+      restartPolicy: Always
