@@ -78,7 +78,7 @@ spec:
     tier: backend
   ports:
   - protocol: TCP
-    port: 443
+    port: 5000
     targetPort: 5000
   type: NodePort
 ---
@@ -109,7 +109,7 @@ data:
   nginx.conf: |
       server {
         # Running port
-        listen 443;
+        listen 5000;
         server_name  localhost;
 
         location / {          
