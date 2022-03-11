@@ -26,12 +26,12 @@ spec:
     spec:
       containers:
         - name: retail-app-server
-          # image: 756795388794.dkr.ecr.eu-west-1.amazonaws.com/air-da-server:latest
+          image: 756795388794.dkr.ecr.eu-west-1.amazonaws.com/air-da-server:latest
           # Set this to "Always" for the cloud, and "Never" if deploying to Minikube locally.
           imagePullPolicy: "Always"
           ports:
             - name: tcp
-              containerPort: 5000
+              containerPort: 5
 ---
 
 apiVersion: apps/v1
