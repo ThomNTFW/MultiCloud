@@ -31,7 +31,7 @@ spec:
           imagePullPolicy: "Always"
           ports:
             - name: tcp
-              containerPort: 5
+              containerPort: 5000
 ---
 
 apiVersion: apps/v1
@@ -78,7 +78,7 @@ spec:
     tier: backend
   ports:
   - protocol: TCP
-    port: 80
+    port: 800
     targetPort: 5000
   type: NodePort
 ---
