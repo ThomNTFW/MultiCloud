@@ -26,7 +26,7 @@ spec:
     spec:
       containers:
         - name: retail-app-server
-          # image: europe-west1-docker.pkg.dev/acn-gcda/multi-cloud/retail-app-server:v1
+          image: europe-west1-docker.pkg.dev/acn-gcda/multi-cloud/retail-app-server:v1
           # Set this to "Always" for the cloud, and "Never" if deploying to Minikube locally.
           imagePullPolicy: "Always"
           ports:
