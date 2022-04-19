@@ -78,7 +78,7 @@ spec:
     tier: backend
   ports:
   - protocol: TCP
-    port: 800
+    port: 80
     targetPort: 5000
   type: NodePort
 ---
